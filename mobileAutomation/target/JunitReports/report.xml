@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="75.415">
+    <testcase classname="Validate Delivery related functionalities in the mobile app" name="Verify delivery list details by Swipedown and SwipeUp" time="74.692">
+        <system-out>
+            <![CDATA[Given Launch the mobile application.........................................passed
+When SwipeDown in the Delivery list screen..................................passed
+Then verify the customer description displayed in the top position after swipe down.passed
+When SwipeUp in the Delivery list screen....................................passed
+Then verify the customer description displayed in the top position after swipe Up.passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
