@@ -21,7 +21,7 @@ public class BaseClass {
 	public String topElementDescription;
 	
 	public void LaunchApp(){
-		
+		String appSourcePath = new java.io.File("src/test/resources/appSource/app-tech-android-challenge-20180918.apk").getAbsolutePath();
 		DesiredCapabilities capabilities = new DesiredCapabilities();		
 		try{
 			capabilities.setCapability("platformVersion", "10"); 
@@ -30,7 +30,7 @@ public class BaseClass {
 			capabilities.setCapability("appPackage", "com.lalamove.techchallenge");
 			capabilities.setCapability("appActivity",".app.MainActivity");
 			capabilities.setCapability("noReset","true");
-			capabilities.setCapability("app", "C:\\Users\\Vnameit\\eclipse-workspace\\mobileAutomation\\src\\test\\resources\\appSource\\app-tech-android-challenge-20180918.apk");
+			capabilities.setCapability("app", appSourcePath);
 			driver = new AppiumDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
 		} catch(Exception e) {
 			System.out.println(e);
